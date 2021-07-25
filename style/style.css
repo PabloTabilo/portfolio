@@ -2,8 +2,16 @@
 :root{
     --backgroundCol : #f2f2f2;
     --themeCol : #c9c9c9;
-    --themeActive: #ffbbd86;
+    --themeActive: #ffbd86;
     --themeActiveBorder: #ff7300;
+}
+
+body{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
 }
 
 html{
@@ -21,6 +29,11 @@ main {
 
 aside {
     padding: 0 15px;
+    width: 70%;
+}
+
+img {
+    width: 500px;
 }
 
 aside .title{
@@ -49,18 +62,16 @@ aside .list-themes li a{
     color: #5a5a5a;
     padding: 15px 10px;
     text-decoration: none;
-    transition: .3s ease all;
 }
 
 aside .list-themes li.active a,
 aside .list-themes li a:hover{
     border: 1px solid #ccc;
     color: #000;
+    transition: .3s ease all;
 }
 
 .container {
-    width: 100%;
-    height: 800px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 30% auto;
@@ -68,11 +79,20 @@ aside .list-themes li a:hover{
 
 .info-exp{
     border: 1px solid #ccc;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 #content{
     width: 80%;
+}
+
+.projects-card{
+    width: 100%;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .skills {
@@ -80,16 +100,134 @@ aside .list-themes li a:hover{
     justify-content: space-between;
 }
 
-#developer ul{
-    list-style: none;
+.title-skills{
+    margin-right: 30px;
 }
 
 .enterprise{
     list-style: none;
 }
 
-@media screen and(max-width: 700px){
+.dashed_div{
+    border: 2px dashed #ccc;
+    width: 100%;
+    font-size: 12px;
+}
+
+@media (max-width: 900px){
+    img{
+        width: 400px;
+    }
+}
+
+@media (max-width: 700px){
+    img{
+        width: 300px;
+    }
+}
+
+@media (max-width: 600px){
+    img {
+        width: 250px;
+    }
+
+    main{
+        margin: 0;
+    }
+
+    .projects-card{
+        width: 100%;
+    }
+
     .container{
+        width: 100%;
         grid-template-columns: 1fr;
+    }
+
+    .skills {
+        flex-wrap: wrap;
+    }
+
+    .skills div {
+        flex: 50%;
+    }
+
+    #content{
+        width: 100%;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 95%;
+    }
+
+    aside{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 5rem;
+        padding: 0;
+        margin: 0;
+        background-color: #ccc;
+        display: flex;
+        align-items: center;
+    }
+
+    aside a{
+        width: 95%;
+        text-align: center;
+    }
+
+    aside .container-themes{
+        padding-top: 0;
+        position: relative;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    aside .container-themes ul{
+        padding: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    aside .list-themes li{
+        height: 100%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside .list-themes li a{
+        padding: 0;
+        margin: 0;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    aside .list-themes li.active a,
+    aside .list-themes li a:hover{
+        border: none;
+        color: black;
+    }
+
+    aside .list-themes li.active,
+    aside .list-themes li:hover{
+        border: 1px solid black;
+        color: black;
+    }
+
+    aside .title{
+        display: none;
     }
 }

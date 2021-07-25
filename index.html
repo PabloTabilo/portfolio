@@ -7,7 +7,7 @@
     <!-- Roboto - google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="./style/style.css">
@@ -34,35 +34,48 @@
                 <div class="card" id="1">
                     <h1>I'am Pablo Tabilo, Front-end Developer && Data Scientist Engineer</h1>
                     <h2>How am I?</h2>
+                    <p>
+                        I am <b>passionate</b> about technology, and I am always <b>learning</b> new implementations of it.
+                        I really like both the <b>logical</b> part and the part of transmitting the correct message to the user about how to <b>perceive</b> the product.
+                    </p>
+                    <p>
+                        In my other branch, relating to <b>mathematics</b> and <b>statistics</b> background, I specialize in topics related to the <b>analysis</b> and <b>interpretation</b> of data using different techniques to obtain results that <b>deliver</b> value.
+                        I have worked on different projects (classification, regression, forecast, multiple classification, etc.) such as: “Developing a model that is capable of classifying potential fraudulent digital transactions”.
+                    </p>
+                    <p>
+                        I am a tenacious and independent person who is constantly <b>informed</b> of new technologies and implementation <b>techniques</b> in the area of interest.
+                    </p>
+                    <div class="dashed_div"></div>
                 </div>
                 <div class="card skills" id="2">
                     <div class="title-skills">
                         <h2>Skills</h2>
                     </div>
                     <div id="developer">
-                        <h3>Front-end</h3>
+                        <h3>Front-end <i class="fab fa-js-square"></i></h3>
                         <ul>
-                            <li>HTML <i class="fab fa-html5"></i></li>
-                            <li>CSS <i class="fab fa-css3-alt"></i></li>
-                            <li>Javascript <i class="fab fa-js-square"></i></li>
-                            <li>React <i class="fab fa-react"></i></li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                            <li>Jest </li>
+                            <li>React </li>
                         </ul>
                     </div>
                     <div class="data">
-                        <h3>Data science</h3>
+                        <h3>Data science <i class="fab fa-python"></i> / <i class="fab fa-r-project"></i></h3>
                         <ul>
                             <li>Python</li>
                             <li>Tensorflow & Keras</li>
                             <li>Pytorch (yolo)</li>
                             <li>scikit-learn && numpy</li>
                             <li>R</li>
+                            <li>caret</li>
                             <li>h2o (R api)</li>
                         </ul>
                     </div>
                     <div class="extra">
-                        <h3>Bonus knowlodge</h3>
+                        <h3>Bonus knowledge <i class="fab fa-docker"></i></h3>
                         <ul>
-                            <li>Jest (unit test js)</li>
                             <li>docker</li>
                             <li>linux commands terminal</li>
                             <li>MySQL</li>
@@ -75,14 +88,16 @@
                         </ul>
                     </div>
                 </div>
+                <div class="dashed_div"></div>
                 <div class="card" id="3">
                     <div class="title-experience">
                         <h2>Professional Experience</h2>
                     </div>
                     <div class="info-exp" id="ticnow">
                         <ul class="enterprise">
-                            <li>Enterprise: <a href="https://www.ticnow.cl">ticnow</a></li>
+                            <li>Enterprise: <a href="https://www.ticnow.cl" target="_blank">ticnow</a></li>
                             <li>Role: Data scientist, leader team</li>
+                            <li>2019 - Present</li>
                             <ul>
                                 <li>Creation and deploy a service with Machine Learning modeling for fraud detection on transactions at real time</li>
                                 <ul>
@@ -99,34 +114,121 @@
                     </div>
                     <div class="info-exp" id="royal">
                         <ul class="enterprise">
-                            <li>Enterprise: <a href="https://www.linkedin.com/in/royal-real-estate-latam/?originalSubdomain=cl">Royal Real Estate</a></li>
+                            <li>Enterprise: <a href="https://www.linkedin.com/in/royal-real-estate-latam/?originalSubdomain=cl" target="_blank">Royal Real Estate</a></li>
                             <li>Role: Data analytics</li>
+                            <li>2018</li>
+                            <ul>
+                                <li>Analytical to real estate of specific zone on Santiago, CL</li>
+                                <ul>
+                                    <li>Collect the data (selenium) & define the vector</li>
+                                    <li>Clean & preprocess for posterior analysis</li>
+                                    <li>Exploration and statistical analysis for learn patterns about the data</li>
+                                    <li>Report & Transmite this information to superiors</li>
+                                </ul>
+                            </ul>
                         </ul>
                     </div>
                 </div>
+                <div class="dashed_div"></div>
                 <div class="card" id="4">
                     <div class="title-projects">
                         <h2>Projects</h2>
                     </div>
-                    <div class="visualization-maze">
-                        <h3>Visualization short search path</h3>
-                        <ul>
-                            <li>Technology</li>
-                            <li>Problems</li>
-                            <li>Solutionns</li>
-                        </ul>
-
+                    <div class="projects-card visualization-maze">
+                        <h3>Path find Visualization</h3>
+                        <div class="content-project">
+                            <div class="img">
+                                <img src="./resources/test_visual.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="info-project">
+                            <ul>
+                                <li>Technology</li>
+                                <ul>
+                                    <li>HTML & CSS</li>
+                                    <li>Javascript</li>
+                                    <li>Jest</li>
+                                    <li>Babel</li>
+                                </ul>
+                                <li>Tasks</li>
+                                <ul>
+                                    <li>Implementation of specific data structures for fast time response & efficient use of memory</li>
+                                    <ul>
+                                        <li>Queue</li>
+                                        <li>Index Priority Queue</li>
+                                        <li>Hash maps</li>
+                                    </ul>
+                                    <li>Implementation of <strong>algorithms</strong> to solve the problem</li>
+                                    <ul>
+                                        <li>BFS</li>
+                                        <li>DFS</li>
+                                        <li>A* (derivate of dijstrak's)</li>
+                                    </ul>
+                                    <li>Implementation of a random maze construction</li>
+                                    <ul>
+                                        <li>Recursive division</li>
+                                    </ul>
+                                </ul>
+                                <li>preview online</li>
+                                <li><a href="https://github.com/PabloTabilo/visual-solution" target="_blank">check github repo <i class="fab fa-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="projects-card visualization-maze">
+                        <h3>OCR tag program (Desktop App)</h3>
+                        <div class="content-project">
+                            <div class="img">
+                                <img src="./resources/test_ocrTag.png" alt="" srcset="">
+                            </div>
+                        </div>
+                        <div class="info-project">
+                            <ul>
+                                <li>Technology</li>
+                                <ul>
+                                    <li>Python</li>
+                                    <li>open-cv</li>
+                                    <li>PyQt5</li>
+                                </ul>
+                                <li>Task</li>
+                                <ul>
+                                    <li>Create an Application for automate tag for images on deep learning solutions, like RCNN</li>
+                                    <li>Persistence of tagged images & save the data for apply a specific format input per technique</li>
+                                    <li>Apply differentes morphologic transformations & filters for give more variation to the data</li>
+                                    <ul>
+                                        <li>Erosion</li>
+                                        <li>Dilatation</li>
+                                        <li>Blur</li>
+                                        <li>Gaussian</li>
+                                        <li>Salt & Pepper</li>
+                                    </ul>
+                                </ul>
+                                <li><a href="https://github.com/PabloTabilo/OCR_TAG_PROGRAM" target="_blank">check github repo <i class="fab fa-github"></i> and lookup the documentation</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <div class="dashed_div"></div>
                 <div class="card" id="5">
                     <h2>Education</h2>
                     <ul>
-                        <li>Postgrade: Master Data science (2021)</li>
-                        <li>Industrial Engineer - specialize on IT</li>
+                        <li>Grades</li>
+                        <ul>
+                            <li>Postgrade: Master Data science (2021), <a href="https://www.uai.cl" target="_blank">Adolfo Ibañez University</a></li>
+                            <li>Industrial Engineer - specialize on IT, <a href="https://www.uai.cl" target="_blank">Adolfo Ibañez University</a></li>
+                        </ul>
+                        <li>Certifications</li>
+                        <ul>
+                            <li>Udemy - Machine Learning certificate <a href="https://github.com/PabloTabilo/ml-ds-python"  target="_blank">check me</a></li>
+                        </ul>
                     </ul>
                 </div>
+                <div class="dashed_div"></div>
                 <div class="card" id="6">
                     <h2>Contact me!</h2>
+                    <ul>
+                        <li>Send me a message to my linkedin  <a href="https://www.linkedin.com/in/pablo-tabilo-952995156/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                        <li>Or, send me an email to pablo198915@gmail.com</li>
+                    </ul>
                 </div>
             </div>
         </div>
