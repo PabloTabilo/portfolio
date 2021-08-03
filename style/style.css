@@ -14,6 +14,10 @@ a{
     text-decoration: none;
 }
 
+h3{
+    font-size: .8em;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -114,9 +118,90 @@ aside .list-themes li a:hover{
     font-size: 12px;
 }
 
+/* icons styles */
+
+.title-dev{
+    display: flex;
+    align-items: center;
+}
+
+.ico{
+    content: "";
+    display: inline-block;
+    border-radius: 20%;
+    cursor: default;
+}
+
+.js-ico{
+    background-image: url(../resources/javascript-logo.png);
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+    margin-left: 3px;
+}
+
+#specialPythonRstudio{
+    flex-direction: column;
+}
+
+.python-ico{
+    background-image: url(../resources/python-logo.png);
+    width: 25px;
+    height: 25px;
+    background-size: 25px;
+}
+
+.rstudio-ico{
+    background-image: url(../resources/r-studio-logo.png);
+    width: 56px;
+    height: 20px;
+    background-size: 56px;
+}
+
+.docker-ico{
+    background-image: url(../resources/docker-logo.png);
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    margin-left: 3px;
+    margin-top: 3px;
+}
+
+.github-ico{
+    background-image: url(../resources/github-logo.png);
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    margin-right: 3px;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.check-ico{
+    background-image: url(../resources/check-square-solid.png);
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.linkedin-ico{
+    background-image: url(../resources/linkedin-logo.png);
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+/* Start media querys */
+
 @media (max-width: 900px){
     img{
         width: 400px;
+    }
+
+    h3{
+        font-size: .7em;
     }
 }
 
@@ -130,7 +215,6 @@ aside .list-themes li a:hover{
     img {
         width: 250px;
     }
-
     main{
         margin: 0;
     }
@@ -211,7 +295,7 @@ aside .list-themes li a:hover{
     aside .list-themes li a{
         padding: 0;
         margin: 0;
-        font-size: 11px;
+        font-size: 9px;
         font-weight: bold;
     }
 
